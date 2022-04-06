@@ -1,0 +1,1576 @@
+<!doctype html>
+<html lang="tr">
+<html>
+<!----->
+
+<!--slider kısmı buradan alınıp yayın sayfasına eklenecek --->
+
+<!--dosya boyutunu küçültmek için minify eklentisini kullan.--->
+
+<head>
+    <meta http-equiv="ContextType" content="text/html" ; charset="utf-8">
+    <meta http-equiv="Content-Language" content="tr">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Competible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maxim-scale=1.0,user-scaleable=no">
+    <meta name="robots" content="index, follow, noarchive">
+    <meta name="revisit-after" content="9 Days">
+    <!--siteyi kaç günde güncelleyeceğimi yazıcan --->
+    <meta name="rating" content="general">
+    <meta name="copyright" content="copyright &copy; 2020 Raybis Software Her Hakkı Saklıdır.">
+    <meta name="reply-to" content="info@tedarx.com">
+    <!---iletişim bilgileri-->
+    <meta name="author" content="Raybis Software">
+    <meta name="description" content="Tedarx tedarikçinizi bulmayı kolaylaştıran bir platformdur.Hemen mağazanızı açın ve satış yapmaya başlayın.">
+    <!---arama motorunda çıkınca altındaki açıklama-->
+    <meta name="keywords" content="Supply , Tedarik , Chain , Supply Chain , Üretici , Toptan">
+    <!--Anahtar Kelimeler daha eklenmesi lazım--->
+    <link type="image/png" rel="icon" sizes="768x768" href="#">
+    <script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+    <title> Carrank</title>
+    <script type="text/javascript" language="javascript" src="js/searchBarAnimation.js"></script>
+    <link type="text/css" rel="stylesheet" href="styledocs/listpage.css">
+
+</head>
+
+
+<body>
+    <div class="allpagearea">
+        <div class="website-header">
+            <div class="websiteheader_container">
+                <div class="websiteheader_logoarea"><a style="color: #111; text-decoration: none;" href="#">PUNTU<span class="logocolor">GO</span></a></div>
+                <div class="dropdownmenu_area">
+                    <div class="dropdown">
+                        <div class="dropdownmenu_btnarea2 dropbtn" style="color: #111;">
+                            <div class="dropdownbtntxtarea"><a href="#" class="dropbtna">En Beğenilenler</a></div>
+
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdowncontenta">Araba   <span class="dropdown_contentspan">></span></a>
+                                <a href="#" class="dropdowncontenta">Telefon  <span class="dropdown_contentspan">></span></a>
+                                <a href="#" class="dropdowncontenta">Bilgisayar  <span  class="dropdown_contentspan">></span></a>
+                                <a href="#" class="dropdowncontenta">Konsol ve Oyun<span  class=" dropdown_contentspan ">></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchbararea" id="searchbarareaid">
+                    <div class="closesearchbararea" onclick="searchBarPassive()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="closesearchbarimg" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="search_area ">
+                        <form id="search-bar " action="/wordsearch " method="post" novalidate=" ">
+                            <input type="text " class="searchinput " id="search-content " name="query_text " placeholder="Ara " title="Arama metnini giriniz " required="required ">
+                            <div class="searchbtnarea" title="Ara">
+                                <button type="submit" class="searchbtn_button">
+                                    <svg viewBox="0 0 16 16" class="searchbtnicon" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="websiteheader_startbtnarea ">
+                    <button class="websiteheaderstartbtn " onClick='location.href="#"'>
+                            <div class="profileiconarea ">
+                            <img src="documents/profileicon.svg " class="profileiconsvg ">
+                            </div>
+                        <div class="signinbtntxtarea ">Oturum Aç</div></button>
+                </div>
+
+
+
+                <div class="searchbtnarea-noactive" title="Ara" onclick="searchBarActive()">
+                    <svg viewBox="0 0 16 16" class="searchbtnicon-noactive" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="tableareacontainer">
+            <div class="tablearea">
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <td class="numberintable">1</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">2</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">3</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">4</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">5</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <td>
+                            <div class="tableadarea"></div>
+                        </td>
+
+                        <tr>
+                            <td class="numberintable">6</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">7</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">8</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">9</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">10</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <tr>
+                            <td class="numberintable">11</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">12</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+                        <tr>
+                            <td class="numberintable">13</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">14</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">15</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">16</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">17</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">18</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">19</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">20</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">21</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+                        <tr>
+                            <td class="numberintable">22</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <td>
+                            <div class="tableadarea"></div>
+                        </td>
+
+
+
+                        <tr>
+                            <td class="numberintable">23</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">24</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">25</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">26</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">27</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">28</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">29</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">30</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <tr>
+                            <td class="numberintable">31</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">32</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+                        <tr>
+                            <td class="numberintable">33</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <td>
+                            <div class="tableadarea"></div>
+                        </td>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">34</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <tr>
+                            <td class="numberintable">35</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">36</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">37</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">38</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">39</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">40</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">41</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">42</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <tr>
+                            <td class="numberintable">43</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">44</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">45</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">46</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">47</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">48</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td class="numberintable">49</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td class="numberintable">50</td>
+                            <td>
+                                <div class="tableimgarea">
+                                    <div class="tableimgcontent">
+                                        <img src="documents/hyundai-all-new-i20-static-01.jpg" class="tableimg">
+                                    </div>
+                                </div>
+                                <div class="tabletextarea">
+                                    <a href="#" class="tabletextlink">Hyundai i20 (2021)</a>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="tablepointspan">8.4</span><span class="tableslashspan">/</span><span class="tabletenspan">10</span>
+                            </td>
+                            <td>
+                                <div class="givevotearea">
+                                    <a href="#" style="color: #111; text-decoration: none;">
+                                        <button type="button" class="tablegivevotevbtn">Oy Ver</button>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="rsideadarea"></div>
+        </div>
+
+
+        <div class="bottomadarea">
+            <div class="bottomadareacontainer"></div>
+        </div>
+
+
+        <div class="footerarea ">
+            <div class="footer_copyrightarea ">
+                <div class="footer_copyrightcontentarea ">Telif Hakkı &copy; 2021 lorem.com - Her Hakkı Saklıdır</div>
+            </div>
+        </div>
+    </div>
+    <div class="cookiesarea "></div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides ");
+            var dots = document.getElementsByClassName("dot ");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active ", " ");
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " active ";
+        }
+
+        function scrollingtoright() {
+            document.getElementById("homepage_line3areashcaseid").scrollBy({
+                top: 0,
+                left: 210,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollingtoleft() {
+            document.getElementById("homepage_line3areashcaseid").scrollBy({
+                top: 0,
+                left: -210,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+</html>

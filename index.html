@@ -1,0 +1,800 @@
+<html lang="tr">
+
+<head>
+    <meta http-equiv="ContextType" content="text/html" ; charset="utf-8">
+    <meta http-equiv="Content-Language" content="tr">
+    <meta charset="utf-8">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link type="image/png" rel="icon" sizes="768x768" href="#">
+    <script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+    <title> Ranksis</title>
+    <script type="text/javascript" language="javascript" src="js/searchBarAnimation.js"></script>
+    <link type="text/css" rel="stylesheet" href="styledocs/style.css">
+
+</head>
+
+
+<body>
+    <div class="allpagearea">
+        <div class="website-header">
+            <div class="websiteheader_container">
+                <div class="websiteheader_logoarea"><a style="color: #111; text-decoration: none;" href="#">PUNTU<span class="logocolor">GO</span></a></div>
+                <div class="dropdownmenu_area">
+                    <div class="dropdown">
+                        <div class="dropdownmenu_btnarea2 dropbtn" style="color: #111;">
+                            <div class="dropdownbtntxtarea"><a href="#" class="dropbtna">En Beğenilenler</a></div>
+
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdowncontenta">Araba   <span class="dropdown_contentspan">></span></a>
+                                <a href="#" class="dropdowncontenta">Telefon  <span class="dropdown_contentspan">></span></a>
+                                <a href="#" class="dropdowncontenta">Bilgisayar  <span  class="dropdown_contentspan">></span></a>
+                                <a href="#" class="dropdowncontenta">Konsol ve Oyun<span  class=" dropdown_contentspan ">></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchbararea" id="searchbarareaid">
+                    <div class="closesearchbararea" onclick="searchBarPassive()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="closesearchbarimg" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="search_area ">
+                        <form id="search-bar " action="/wordsearch " method="get " novalidate=" ">
+                            <input type="text " class="searchinput " id="search-content " name="query_text " placeholder="Ara " title="Arama metnini giriniz " required="required ">
+                            <!---->
+                            <div class="searchbtnarea" title="Ara">
+                                <button type="submit" class="searchbtn_button">
+                                    <svg viewBox="0 0 16 16" class="searchbtnicon" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="websiteheader_startbtnarea ">
+                    <button class="websiteheaderstartbtn " onClick='location.href="# "'>
+                            <div class="profileiconarea ">
+                            <img src="documents/profileicon.svg " class="profileiconsvg ">
+                            </div>
+                        <div class="signinbtntxtarea ">Oturum Aç</div></button>
+                </div>
+
+
+
+                <div class="searchbtnarea-noactive" title="Ara" onclick="searchBarActive()">
+                    <svg viewBox="0 0 16 16" class="searchbtnicon-noactive" fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="photoarea">
+            <div class="Start">
+                <div class="startsliderlinecontainerarea">
+                    <div class="startslidercontinerarea">
+
+
+                        <div class="slider_prevbtn" onclick="plusSlides(-1)">&#10094;</div>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <img src="documents/hyundai-i10-0120-aqua-turquoise-19.jpg" style="width:100%">
+                                <div class="slider_text">Hyundai i10 (2021)</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="documents/hyundai-all-new-i20-static-01.jpg" style="width:100%">
+                                <div class="slider_text">Hyundai i20 (2021)</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="documents/hyundai-all-new-tucson-0920-01.jpg" style="width:100%">
+                                <div class="slider_text">Hyundai Tucson (2021)</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slider_nextbtn" onclick="plusSlides(1)">&#10095;</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="homepage_line1headerarea ">
+            <div class="homepage_line1headercontainer ">
+                <div class="homepage_line1headercontentarea ">En İyiler</div>
+            </div>
+        </div>
+        <div class="homepage_line1area ">
+            <div class="homepage_line1containerarea ">
+                <div class="homepage_homepage_line1leftcontentarea ">
+                    <div class="homepage_line1navarea ">
+                        <div class="homepage_line1navareaheader ">Kategori Seçimi: </div>
+                        <div class="homepage_line1navcontent ">
+                            <div class="homepage_line1navareacar ">
+                                <svg xmlns="http://www.w3.org/2000/svg " fill="currentColor " class="homepage_line1navareasvg currentchoice " viewBox="0 0 16 16 ">
+                                    <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z "/>
+                                </svg>
+                            </div>
+                            <div class="homepage_line1navareaphone ">
+                                <svg xmlns="http://www.w3.org/2000/svg " fill="currentColor " class="homepage_line1navareasvg " viewBox="0 0 16 16 ">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z "/>
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z "/>
+                                </svg>
+                            </div>
+                            <div class="homepage_line1navareacomp ">
+                                <svg xmlns="http://www.w3.org/2000/svg " fill="currentColor " class="homepage_line1navareasvg " viewBox="0 0 16 16 ">
+                                    <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z "/>
+                                </svg>
+                            </div>
+                            <div class="homepage_line1navareaconsole ">
+                                <svg xmlns="http://www.w3.org/2000/svg " fill="currentColor " class="homepage_line1navareasvg " viewBox="0 0 16 16 ">
+                                    <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z "/>
+                                    <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05
+                                1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627
+                                0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364
+                                1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42
+                                0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42
+                                0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z "/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a href="#" style="color: #111; text-decoration: none;">
+                        <div class="homepage_homepage_line1leftcontentareacell">
+                            <div class="homepage_line1numberarea ">
+                                <div class="homepage_line1numbercontent ">1</div>
+                            </div>
+                            <div class="homepage_linearea1photoarea ">
+                                <div class="homepage_linearea1photoimgarea ">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg " class="homepage_linearea1photoimg ">
+                                    <div class="homepage_line1seealarea">
+                                        <div class="homepage_line1seeallcontent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage_linearea1txtarea ">
+                                <div class="homepage_linearea1txt ">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#" style="color: #111; text-decoration: none;">
+                        <div class="homepage_homepage_line1leftcontentareacell ">
+                            <div class="homepage_line1numberarea ">
+                                <div class="homepage_line1numbercontent ">2</div>
+                            </div>
+                            <div class="homepage_linearea1photoarea ">
+                                <div class="homepage_linearea1photoimgarea ">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg " class="homepage_linearea1photoimg ">
+                                    <div class="homepage_line1seealarea">
+                                        <div class="homepage_line1seeallcontent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage_linearea1txtarea ">
+                                <div class="homepage_linearea1txt ">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#" style="color: #111; text-decoration: none;">
+                        <div class="homepage_homepage_line1leftcontentareacell ">
+                            <div class="homepage_line1numberarea ">
+                                <div class="homepage_line1numbercontent ">3</div>
+                            </div>
+                            <div class="homepage_linearea1photoarea ">
+                                <div class="homepage_linearea1photoimgarea ">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg " class="homepage_linearea1photoimg ">
+                                    <div class="homepage_line1seealarea">
+                                        <div class="homepage_line1seeallcontent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage_linearea1txtarea ">
+                                <div class="homepage_linearea1txt ">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="#" style="color: #111; text-decoration: none;">
+                        <div class="homepage_homepage_line1leftcontentareacell ">
+                            <div class="homepage_line1numberarea ">
+                                <div class="homepage_line1numbercontent ">4</div>
+                            </div>
+                            <div class="homepage_linearea1photoarea ">
+                                <div class="homepage_linearea1photoimgarea ">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg " class="homepage_linearea1photoimg ">
+                                    <div class="homepage_line1seealarea">
+                                        <div class="homepage_line1seeallcontent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage_linearea1txtarea ">
+                                <div class="homepage_linearea1txt ">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#" style="color: #111; text-decoration: none;">
+                        <div class="homepage_homepage_line1leftcontentareacell ">
+                            <div class="homepage_line1numberarea ">
+                                <div class="homepage_line1numbercontent ">5</div>
+                            </div>
+                            <div class="homepage_linearea1photoarea ">
+                                <div class="homepage_linearea1photoimgarea ">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg " class="homepage_linearea1photoimg ">
+                                    <div class="homepage_line1seealarea">
+                                        <div class="homepage_line1seeallcontent"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage_linearea1txtarea ">
+                                <div class="homepage_linearea1txt ">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="homepage_line1rightsideadheaderarea ">
+                    <div class="homepage_line1rightsideadheadercontent ">Reklam</div>
+                </div>
+
+                <div class="homepage_line1rightsideadarea "></div>
+
+            </div>
+        </div>
+
+        <div class="homepage_line2headerarea">
+            <div class="homepage_line2headercontainer">
+                <div class="homepage_line2headercontent">Yeni Eklenenler</div>
+            </div>
+        </div>
+
+        <div class="homepage_line2area " style="color: #111; ">
+            <div class="homepage_line2containerarea">
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#" style="color: #111;">
+                    <div class="homepage_line2cellarea">
+                        <div class="homepage_line2cellphotoarea">
+                            <div class="homepage_line2cellphotocontent"><img class="homepage_line2cellphotocontentimg" src="documents/hyundai-all-new-i20-static-01.jpg"></div>
+                        </div>
+                        <div class="homepage_line2cellcarinfoarea">
+                            <div class="homepage_line2cellcarinfotxtcontentarea">
+                                <div class="homepage_line2cellcarinfotxtcontent">Hyundai i20 (2021)</div>
+                            </div>
+                        </div>
+                        <div class="homepage_line2cellpointinfoarea">
+                            <div class="homepage_line2cellpointinfotxtcontentarea">
+                                <div class="homepage_line2cellpointinfotxtcontent">8.4
+                                    <span class="homepage_line2cellslash">/</span><span class="homepage_line2celltentext">10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="homepage_line3headerarea">
+            <div class="homepage_line3headercontainer">
+                <div class="homepage_line3headercontent">Öne Çıkanlar</div>
+            </div>
+        </div>
+
+        <div class="homepage_line3area " style="color: #111; ">
+            <div class="homepage_line3containerarea">
+
+
+                <div class="homepage_line3areashcase" id="homepage_line3areashcaseid">
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="#" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="deneme.html" style="color: #111; text-decoration: none;">
+                            <div class="homepage_line3shcasearea">
+                                <div class="shcaseimgarea">
+                                    <img src="documents/hyundai-all-new-i20-static-01.jpg" class="shcaseimg" alt="" title="">
+                                </div>
+                                <div class="shcasetxtarea">
+                                    <span class="shcasetxt">Hyundai i20 (2021)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="leftarrowarea" onclick="scrollingtoleft()">
+                    <div class="leftarrowicon">
+                        <img src="documents/leftarrowicon.svg" class="leftarrowiconimg">
+                    </div>
+                </div>
+                <div class="rightarrowarea" onclick="scrollingtoright()">
+                    <div class="rightarrowicon">
+                        <img src="documents/rightarrowicon.svg" class="rightarrowiconimg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footerarea ">
+            <div class="footer_copyrightarea ">
+                <div class="footer_copyrightcontentarea ">Telif Hakkı &copy; 2021 lorem.com- Her Hakkı Saklıdır</div>
+            </div>
+        </div>
+    </div>
+    <div class="cookiesarea "></div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides ");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            slides[slideIndex - 1].style.display = "block ";
+        }
+
+        function scrollingtoright() {
+            document.getElementById("homepage_line3areashcaseid").scrollBy({
+                top: 0,
+                left: 210,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollingtoleft() {
+            document.getElementById("homepage_line3areashcaseid").scrollBy({
+                top: 0,
+                left: -210,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+</html>
